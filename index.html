@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<title>Okta OIDC: resource owner password credentials</title>
+
+<!--jquery for bootstrap-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
+<!--bootstrap-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--/bootstrap-->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Okta OIDC</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+          </div>
+        </div>
+      </nav>
+
+      <div class="starter-template">
+        <h3>Okta OIDC: resource owner password credentials flow</h3>
+
+        <form action = "evaluateForm.php" method = "POST">
+
+          <div class="form-group">
+              <label for="exampleInputEmail1">username</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="steve.gates" name="username">
+              <small id="emailHelp" class="form-text text-muted">steve.gates</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Oktane#17" name = "password">
+              <small id="passwordHelp" class="form-text text-muted">Oktane#17</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</html>
